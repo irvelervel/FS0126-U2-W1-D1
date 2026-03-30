@@ -45,7 +45,53 @@ footer {
 /* ipotizziamo un generico breakpoint per gli stili tablet da >576px */
 /* questo blocco di CSS incluso nella media-query SCOMPARE dagli stili della pagina quando le condizioni non sono TRUE */
 @media screen and (min-width: 576px) {
+  /* scrivete in questo blocco le regole aggiuntive che volete aggiungere alla vis. TABLET */
+
+  /* affianchiamo i link nella navbar */
   header ul li {
     display: inline-block;
+  }
+
+  /* riduciamo la larghezza del blocco di testo e centriamola */
+  #text-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* STILI PC (notebook+desktop) */
+@media screen and (min-width: 992px) {
+  /* rendo le sezioni affiancate */
+  #img-container,
+  #text-container {
+    display: inline-block;
+    width: 45%;
+  }
+
+  /* miglioro l'aspetto del main */
+  main {
+    text-align: center;
+    margin: 2em 0;
+  }
+}
+
+/* MEDIA PRINT */
+@media print {
+  /* nascondo menu e footer */
+  nav,
+  footer {
+    display: none;
+  }
+
+  body {
+    font-size: 110%;
+  }
+
+  /* ripristino infine l'affiancamento delle sezioni perchè la mia @media print non ha attivato
+  le @media screen che ho indicato prima! */
+  #img-container,
+  #text-container {
+    display: inline-block;
+    width: 45%;
   }
 }
