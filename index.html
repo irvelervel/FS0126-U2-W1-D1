@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design & Media Queries</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>EPICODE Test Page</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Corsi</a>
+          </li>
+          <li>
+            <a href="#">Docenti</a>
+          </li>
+          <li>
+            <a href="#">Iscriviti!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="img-container">
+        <img src="https://placecats.com/400/400" alt="kitten picture" />
+      </section>
+      <section id="text-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          molestiae. Quae eos sed error blanditiis expedita minus, animi
+          corporis ut esse eligendi minima iure nam, consequuntur natus unde
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          molestiae. Quae eos sed error blanditiis expedita minus, animi
+          corporis ut esse eligendi minima iure nam, consequuntur natus unde
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          molestiae. Quae eos sed error blanditiis expedita minus, animi
+          corporis ut esse eligendi minima iure nam, consequuntur natus unde
+          voluptas! Possimus!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>EPICODE - <span id="current-year"></span></p>
+    </footer>
+    <script>
+      const span = document.getElementById('current-year') // recupero lo span vuoto
+      span.innerText = new Date().getFullYear() // riempio lo span con l'anno corrente
+    </script>
+  </body>
+</html>
